@@ -1,0 +1,146 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+:root {
+  --background: #5c5470;
+  --dark: #352f44;
+  --light: #b9b4c7;
+  --text: #faf0e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+  white-space: nowrap;
+}
+
+/* project css */
+.container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--dark);
+}
+
+.title {
+  text-align: center;
+  color: var(--text);
+}
+
+.result-container {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background);
+}
+
+.result {
+  color: var(--text);
+  padding: 0.25rem 0.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  border: none;
+  color: var(--text);
+  background-color: var(--dark);
+}
+
+.large-button {
+  justify-content: center;
+  font-size: 0.9rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--background);
+}
+
+button:active {
+  scale: 0.98;
+}
+
+button:active i{
+  scale: 0.98;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+label {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+input {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  accent-color: var(--light);
+  background-color: var(--background);
+}
+
+input[type="range"] {
+  width: 4rem;
+  accent-color: var(--light);
+}
+
+@media screen and (max-width:500px) {
+  .title{
+    font-size: 1.35rem;
+  }
+
+  .container{
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .result{
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
